@@ -16,6 +16,8 @@ body {
 iframe {
     height: 100%;
     width: 100%;
+    min-width: 1080px;
+    overflow-x: scroll;
 }
 
 details[open] {
