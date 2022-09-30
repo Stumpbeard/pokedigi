@@ -55,12 +55,12 @@ function drawEvoLine(one, two, options) {
     ctx.lineWidth = 5;
 
     var onePos = {
-        x: one.x + one.width / 2,
-        y: one.y + one.height / 2,
+        x: one.offsetLeft + one.width / 2,
+        y: one.offsetTop + one.height / 2,
     }
     var twoPos = {
-        x: two.x + two.width / 2,
-        y: two.y + two.height / 2,
+        x: two.offsetLeft + two.width / 2,
+        y: two.offsetTop + two.height / 2,
     }
 
     var hOffsetTotal = (two.height / Number(options?.hOffset ? options.hOffset[2] : NaN)) | 0
