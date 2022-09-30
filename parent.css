@@ -17,10 +17,10 @@ iframe {
     height: 100%;
     width: 100%;
     min-width: 1080px;
-    overflow-x: scroll;
+    min-height: 910px;
+    overflow: scroll;
 }
 
 details[open] {
-    height: 100%;
     width: 100%;
 }
