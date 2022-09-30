@@ -1,8 +1,3 @@
-var body = document.getElementById("body")
-var canvas = document.getElementById("canvas")
-var ctx = canvas.getContext("2d")
-
-
 const main = () => {
     canvas.width = body.clientWidth
     canvas.height = body.clientHeight
@@ -80,4 +75,10 @@ function drawEvoLine(one, two, options) {
 }
 
 
-window.setInterval(main, 16)
+window.onload = () => {
+    body = document.getElementById("body")
+    canvas = document.getElementById("canvas")
+    ctx = canvas.getContext("2d")
+
+    window.setInterval(main, 16)
+}
